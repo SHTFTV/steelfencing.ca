@@ -1,0 +1,6 @@
+{
+  "name": "SteelFencing.ca",
+  "description": "Canada's premier architectural steel fencing, horizontal slat privacy panels, security gates, and interactive 3D fence builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

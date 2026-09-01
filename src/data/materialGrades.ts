@@ -1,0 +1,186 @@
+import { MaterialGradeOption, MaterialGradeId } from '../types';
+
+export const MATERIAL_GRADES: MaterialGradeOption[] = [
+  {
+    id: 'standard',
+    name: 'Standard Architectural Grade',
+    shortName: 'Standard',
+    badge: 'Standard 25-Yr',
+    tagline: 'Standard suburban residential grade for protected lots & moderate Canadian microclimates.',
+    gaugeSteel: '20-Gauge (0.91mm) Cold-Rolled Galvalume®',
+    coating: 'Thermoset Architectural Polyester (AAMA 2603)',
+    saltSprayHours: 1500,
+    windRatingKmH: 120,
+    subZeroRating: '-25°C Rated',
+    perFootAddon: 0,
+    warrantyYears: 25,
+    description:
+      'Engineered with cold-rolled Galvalume® steel core and baked architectural powder coat. Perfect for typical suburban residential developments and standard wind & frost conditions.',
+    highlights: [
+      '20-Gauge Galvalume® zinc-aluminum core',
+      'AAMA 2603 thermoset powder coat finish',
+      'Salt-spray resistant zinc-aluminum coating',
+      'Typical 25-year anti-perforation warranty range (varies by installer)',
+    ],
+    climateLongevity: {
+      ON: {
+        years: '25–30 Years',
+        avgYears: 28,
+        rating: 'Optimal',
+        note: 'Proven performance in standard GTA & suburban microclimates. Annual spring hose rinse recommended.',
+      },
+      BC: {
+        years: '30–35 Years',
+        avgYears: 32,
+        rating: 'Excellent',
+        note: 'Long lifespan in mild coastal rain & moderate freeze-thaw zones.',
+      },
+      AB: {
+        years: '25–28 Years',
+        avgYears: 26,
+        rating: 'Good',
+        note: 'Handles freeze-thaw; sheltered suburban lots protected from intense open-prairie chinook gusts.',
+      },
+      QC: {
+        years: '25–30 Years',
+        avgYears: 27,
+        rating: 'Optimal',
+        note: 'Standard residential snow and ice exposure; regular spring rinse after road salting.',
+      },
+      'MB-SK': {
+        years: '25–28 Years',
+        avgYears: 26,
+        rating: 'Good',
+        note: 'Resilient in standard prairie residential subdivisions with standard snow loading.',
+      },
+      ATL: {
+        years: '20–25 Years',
+        avgYears: 22,
+        rating: 'Moderate',
+        note: 'Adequate for inland properties; heavy salt fog near oceanfront may reduce surface gloss over time.',
+      },
+    },
+  },
+  {
+    id: 'heavy-duty',
+    name: 'Heavy-Duty Commercial Grade',
+    shortName: 'Heavy-Duty (+18%)',
+    badge: '35-Yr Commercial',
+    tagline: '65% thicker steel core with super-durable TGIC coating for heavy winter salt & blizzards.',
+    gaugeSteel: '16-Gauge (1.52mm) High-Tensile Structural Steel',
+    coating: 'Super-Durable TGIC Polyester (AAMA 2604)',
+    saltSprayHours: 3000,
+    windRatingKmH: 150,
+    subZeroRating: '-40°C Tested Sub-Zero',
+    perFootAddon: 14, // +$14/LF
+    warrantyYears: 35,
+    description:
+      'Substantially reinforced 16-gauge structural core offering 65% higher impact resistance, engineered for heavy road de-icing salt sprays, deep frost soil upheaval, and 150 km/h windstorms.',
+    highlights: [
+      '16-Gauge 65% thicker high-tensile core',
+      'AAMA 2604 Super-Durable TGIC resin finish',
+      'Enhanced salt-fog corrosion resistance',
+      '150 km/h blizzard & Chinook wind load rating',
+      'Typical 35-year commercial structural warranty range (varies by installer)',
+    ],
+    climateLongevity: {
+      ON: {
+        years: '35–40 Years',
+        avgYears: 38,
+        rating: 'Maximum',
+        note: 'Engineered for heavy winter highway de-icing salt spray and 48" frost upheaval.',
+      },
+      BC: {
+        years: '40–45 Years',
+        avgYears: 42,
+        rating: 'Maximum',
+        note: 'Withstands constant Pacific rainforest moisture & coastal ocean mist without micro-pitting.',
+      },
+      AB: {
+        years: '35–38 Years',
+        avgYears: 36,
+        rating: 'Maximum',
+        note: 'Zero thermal warp during severe 40°C Chinook temperature swings & heavy snow drifting.',
+      },
+      QC: {
+        years: '35–40 Years',
+        avgYears: 37,
+        rating: 'Maximum',
+        note: 'High resistance to heavy municipal snowplow salt slush and -35°C deep freeze.',
+      },
+      'MB-SK': {
+        years: '35–38 Years',
+        avgYears: 36,
+        rating: 'Maximum',
+        note: 'Engineered for 150 km/h prairie blizzard gusts and deep 72" frost penetration.',
+      },
+      ATL: {
+        years: '30–35 Years',
+        avgYears: 33,
+        rating: 'High',
+        note: 'Recommended baseline for Atlantic nor\'easter winds and coastal humidity.',
+      },
+    },
+  },
+  {
+    id: 'marine-arctic',
+    name: 'Ultra Marine & Arctic Extreme Grade',
+    shortName: 'Marine/Arctic (+35%)',
+    badge: '50-Yr / Lifetime',
+    tagline: '14-gauge ZAM® zinc-magnesium alloy & PVDF Kynar 500® for lifetime oceanfront & polar zones.',
+    gaugeSteel: '14-Gauge (1.98mm) ZAM® Zinc-Alloy Steel / 316 Stainless',
+    coating: 'Dual-Layer Fluoropolymer PVDF Kynar 500® (AAMA 2605)',
+    saltSprayHours: 5000,
+    windRatingKmH: 180,
+    subZeroRating: '-55°C Polar Vortex Proof',
+    perFootAddon: 28, // +$28/LF
+    warrantyYears: 50,
+    description:
+      'The highest metallurgical standard in Canada: 14-gauge ZAM® zinc-aluminum-magnesium alloy, dual-layer PVDF Kynar 500® architectural finish, and 316 marine stainless fasteners. Total rust immunity in coastal oceanfront and polar conditions.',
+    highlights: [
+      '14-Gauge ultra-heavy ZAM® zinc-magnesium alloy',
+      'Dual-layer AAMA 2605 PVDF Kynar 500® coating',
+      'Premium salt-fog & ocean-spray corrosion resistance',
+      '180 km/h Category 2 hurricane wind rating',
+      'Typical 50-year (lifetime-class) warranty range (varies by installer)',
+    ],
+    climateLongevity: {
+      ON: {
+        years: '50+ Years (Lifetime)',
+        avgYears: 50,
+        rating: 'Lifetime',
+        note: 'Lakeside waterfront properties, heavy industrial zones, and zero-maintenance lifetime durability.',
+      },
+      BC: {
+        years: '50–60+ Years (Lifetime)',
+        avgYears: 55,
+        rating: 'Lifetime',
+        note: 'Oceanfront Pacific coastal zone certified; 100% immune to salt-air corrosion.',
+      },
+      AB: {
+        years: '50+ Years (Lifetime)',
+        avgYears: 50,
+        rating: 'Lifetime',
+        note: 'Polar vortex proof (-55°C) with zero micro-fractures under extreme heavy snow drift pressure.',
+      },
+      QC: {
+        years: '50+ Years (Lifetime)',
+        avgYears: 50,
+        rating: 'Lifetime',
+        note: 'Impervious to severe calcium chloride road salt, riverfront humidity, and heavy ice dams.',
+      },
+      'MB-SK': {
+        years: '50+ Years (Lifetime)',
+        avgYears: 50,
+        rating: 'Lifetime',
+        note: 'Extreme heavy gauge withstands wide-open prairie windstorms and heavy agricultural impacts.',
+      },
+      ATL: {
+        years: '45–50+ Years (Lifetime)',
+        avgYears: 48,
+        rating: 'Lifetime',
+        note: 'The gold standard for Atlantic oceanfront gale winds, maritime fog, and sea spray.',
+      },
+    },
+  },
+];
